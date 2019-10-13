@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.RateActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:onClick="handleDetailsFilm"
+        app:layout_constraintBottom_toTopOf="@+id/id_film_detail"
+        app:layout_constraintEnd_toStartOf="@+id/imageView2"
+        app:layout_constraintHorizontal_bias="0.444"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_film" />
+
+    <TextView
+        android:id="@+id/id_film_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Detail Film"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/id_drama_detail"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:onClick="handleDetailsDrama"
+        app:layout_constraintBottom_toTopOf="@+id/id_drama_detail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_drama1" />
+
+    <TextView
+        android:id="@+id/id_drama_detail"
+        android:layout_width="92dp"
+        android:layout_height="17dp"
+        android:text="Detail Drama"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:onClick="handleRate"
+        app:layout_constraintBottom_toTopOf="@+id/id_rate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.518"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:srcCompat="@drawable/ic_rate" />
+
+    <TextView
+        android:id="@+id/id_rate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rate"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/id_drama_detail" />
+
+        <FrameLayout
+        android:id="@+id/fragment_placeholder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/textView"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
