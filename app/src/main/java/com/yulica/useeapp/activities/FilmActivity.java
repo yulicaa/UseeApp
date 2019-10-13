@@ -22,7 +22,7 @@ public class FilmActivity extends AppCompatActivity {
         FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
         fragmentTransaction.setCustomAnimations(R.anim.enter_from_left, R.anim.exit_from_left, R.anim.enter_from_right, R.anim.exit_from_right);
 //        fragmentTransaction.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE);
-        fragmentTransaction.replace(R.id.dynamic_fragment_placeholder,new GenreFragment(), "RED_FRAGMENT");
+        fragmentTransaction.replace(R.id.dynamic_fragment_placeholder,new GenreFragment(), "GENRE_FRAGMENT");
         fragmentTransaction.addToBackStack(null);
         fragmentTransaction.commit();
     }
@@ -30,7 +30,7 @@ public class FilmActivity extends AppCompatActivity {
     public void handlerClickCountryFragment(View view) {
         FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
         fragmentTransaction.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE);
-        fragmentTransaction.replace(R.id.dynamic_fragment_placeholder,new CountryFragment(), "BLUE_FRAGMENT");
+        fragmentTransaction.replace(R.id.dynamic_fragment_placeholder,new CountryFragment(), "COUNTRY_FRAGMENT");
         fragmentTransaction.addToBackStack(null);
         fragmentTransaction.commit();
     }

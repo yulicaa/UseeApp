@@ -7,6 +7,14 @@
     tools:context=".activities.RateActivity">
 
     <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="580dp"
+        android:layout_height="92dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/line" />
+
+    <ImageView
         android:id="@+id/imageView"
         android:layout_width="65dp"
         android:layout_height="65dp"
@@ -65,7 +73,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/id_drama_detail" />
 
-        <FrameLayout
+            <FrameLayout
         android:id="@+id/fragment_placeholder"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
