@@ -11,9 +11,6 @@ import android.view.ViewGroup;
 
 import com.yulica.useeapp.R;
 
-/**
- * A simple {@link Fragment} subclass.
- */
 public class FilmFragment extends Fragment {
 
 
@@ -27,6 +24,6 @@ public class FilmFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_film, container, false);
-    }
+}
 
 }

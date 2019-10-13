@@ -1,14 +1,217 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#F5F370"
     tools:context=".fragments.DramaFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView14"
+            android:layout_width="471dp"
+            android:layout_height="232dp"
+            android:layout_marginBottom="464dp"
+            android:src="@drawable/drama_extraordinary"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView15"
+            android:layout_width="118dp"
+            android:layout_height="101dp"
+            android:src="@android:drawable/ic_media_play"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView14"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/imageView14"
+            app:layout_constraintTop_toTopOf="@+id/imageView14" />
+
+        <ImageView
+            android:id="@+id/comment"
+            android:layout_width="25dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="8dp"
+            android:src="@drawable/comment"
+            app:layout_constraintBottom_toTopOf="@+id/guideline4"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/textcomment"
+            android:layout_width="38dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="1.5k"
+            android:textColor="#0A0A0A"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/guideline4"
+            app:layout_constraintStart_toEndOf="@+id/comment" />
+
+
+        <ImageView
+            android:id="@+id/like"
+            android:layout_width="20dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="6dp"
+            android:src="@drawable/like"
+            app:layout_constraintBottom_toTopOf="@+id/guideline4"
+            app:layout_constraintStart_toEndOf="@+id/textcomment" />
+
+        <TextView
+            android:id="@+id/textlike"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="8k"
+            android:textColor="#0A0A0A"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/guideline4"
+            app:layout_constraintStart_toEndOf="@+id/like" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Extra-ordinary You"
+            android:textColor="#0A0A0A"
+            android:textSize="35dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView14"
+            app:layout_constraintVertical_bias="0.033" />
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="27dp"
+            android:layout_height="22dp"
+            android:src="@drawable/stars"
+            app:layout_constraintBottom_toTopOf="@+id/guideline4"
+            app:layout_constraintEnd_toStartOf="@+id/imageView11"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView4"
+            app:layout_constraintVertical_bias="0.041" />
+
+        <ImageView
+            android:id="@+id/imageView10"
+            android:layout_width="27dp"
+            android:layout_height="22dp"
+            android:src="@drawable/stars"
+            app:layout_constraintBottom_toTopOf="@+id/guideline4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.07"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView4"
+            app:layout_constraintVertical_bias="0.041" />
+
+        <ImageView
+            android:id="@+id/imageView11"
+            android:layout_width="27dp"
+            android:layout_height="22dp"
+            android:src="@drawable/stars"
+            app:layout_constraintBottom_toTopOf="@+id/guideline4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.14"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView4"
+            app:layout_constraintVertical_bias="0.041" />
+
+        <ImageView
+            android:id="@+id/imageView12"
+            android:layout_width="27dp"
+            android:layout_height="22dp"
+            android:src="@drawable/stars"
+            app:layout_constraintBottom_toTopOf="@+id/guideline4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView4"
+            app:layout_constraintVertical_bias="0.041" />
+
+        <ImageView
+            android:id="@+id/imageView13"
+            android:layout_width="27dp"
+            android:layout_height="22dp"
+            android:src="@drawable/stars"
+            app:layout_constraintBottom_toTopOf="@+id/guideline4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.27"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView4"
+            app:layout_constraintVertical_bias="0.041" />
+
+        <ImageView
+            android:id="@+id/morelike"
+            android:layout_width="68dp"
+            android:layout_height="52dp"
+            android:src="@drawable/morelike"
+            app:layout_constraintBottom_toTopOf="@+id/guideline4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.989"
+            app:layout_constraintStart_toEndOf="@+id/textlike" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="31dp"
+            android:layout_height="20dp"
+            android:layout_marginBottom="8dp"
+            android:text="54k"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/guideline4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.913"
+            app:layout_constraintStart_toEndOf="@+id/textlike" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="41dp"
+            android:layout_height="12dp"
+            android:layout_marginTop="12dp"
+            android:text="Dilihat oleh"
+            android:textColor="@color/white"
+            android:textSize="8sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/guideline4"
+            app:layout_constraintEnd_toEndOf="@+id/morelike"
+            app:layout_constraintHorizontal_bias="0.481"
+            app:layout_constraintStart_toStartOf="@+id/morelike"
+            app:layout_constraintTop_toTopOf="@+id/morelike"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="371dp"
+            android:layout_height="204dp"
+            android:layout_marginBottom="12dp"
+            android:text="Eun Dan oh yang diperankan oleh Kim Hye Yoon adalah seorang siswa sekolah menengah 17 tahun dari keluarga kaya. Akan tetapi Dia memiliki penyakit jantung, yang diprediksi oleh dokter umurnya tidak akan melewati masa remajanya. Kemudian Dan Oh menyadari akan sesuatu dan banyak hal aneh. Celah dan juga ingatannya juga dikejutkan dengan fakta lain tentang kehidupannya. Dia adalah karakter dalam webtoon Korea dan semua tindakannya telah dilakukan oleh orang yang menggambarnya. Namun beberapa kali Dan Oh menentang hal itu. Lebih buruknya, Dia menyadari bahwa Dia hanya seorang pendukung di dalam karakter webtoon itu. Dengan pemahaman yang baru saja Ia dapatkan tentang Dunia yang Ia jalanani saat ini, Eun Dan Oh memutuskan untuk menemukan cinta sejati dalam alur ceritanya sendiri dan mengelak dari sang penulis. Ia memutuskan untuk membuat jalur dan alur ceritanya sendiri."
+            android:textColor="#0A0A0A"
+            android:textSize="12sp"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toTopOf="@+id/textlike"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView13" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.85" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </FrameLayout>
