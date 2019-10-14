@@ -197,7 +197,7 @@
             android:layout_width="371dp"
             android:layout_height="204dp"
             android:layout_marginBottom="12dp"
-            android:text="Eun Dan oh yang diperankan oleh Kim Hye Yoon adalah seorang siswa sekolah menengah 17 tahun dari keluarga kaya. Akan tetapi Dia memiliki penyakit jantung, yang diprediksi oleh dokter umurnya tidak akan melewati masa remajanya. Kemudian Dan Oh menyadari akan sesuatu dan banyak hal aneh. Celah dan juga ingatannya juga dikejutkan dengan fakta lain tentang kehidupannya. Dia adalah karakter dalam webtoon Korea dan semua tindakannya telah dilakukan oleh orang yang menggambarnya. Namun beberapa kali Dan Oh menentang hal itu. Lebih buruknya, Dia menyadari bahwa Dia hanya seorang pendukung di dalam karakter webtoon itu. Dengan pemahaman yang baru saja Ia dapatkan tentang Dunia yang Ia jalanani saat ini, Eun Dan Oh memutuskan untuk menemukan cinta sejati dalam alur ceritanya sendiri dan mengelak dari sang penulis. Ia memutuskan untuk membuat jalur dan alur ceritanya sendiri."
+            android:text="Eun Dan oh adalah seorang siswa sekolah menengah 17 tahun dari keluarga kaya. Akan tetapi Dia memiliki penyakit jantung, yang diprediksi oleh dokter umurnya tidak akan melewati masa remajanya. Celah dan juga ingatannya juga dikejutkan dengan fakta lain tentang kehidupannya. Dia adalah karakter dalam webtoon Korea dan semua tindakannya telah dilakukan oleh orang yang menggambarnya. Namun beberapa kali Dan Oh menentang hal itu. Lebih buruknya, Dia menyadari bahwa Dia hanya seorang pendukung di dalam karakter webtoon itu. Dengan pemahaman yang baru saja Ia dapatkan tentang Dunia yang Ia jalanani saat ini, Eun Dan Oh memutuskan untuk menemukan cinta sejati dalam alur ceritanya sendiri dan mengelak dari sang penulis. Ia memutuskan untuk membuat jalur dan alur ceritanya sendiri."
             android:textColor="#0A0A0A"
             android:textSize="12sp"
             android:textStyle="normal"
@@ -205,6 +205,18 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageView13" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="Episode 1 - 32"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/textView10"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.916"
+            app:layout_constraintStart_toEndOf="@+id/imageView13" />
 
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/guideline4"

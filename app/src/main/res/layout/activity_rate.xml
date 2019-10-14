@@ -79,6 +79,4 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/id_drama_detail" />
 
-
-
 </androidx.constraintlayout.widget.ConstraintLayout>

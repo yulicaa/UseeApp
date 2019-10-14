@@ -8,15 +8,280 @@
     tools:context=".fragments.RateFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="" />
 
-    <ImageView
-        android:id="@+id/imageView11"
-        android:layout_width="238dp"
-        android:layout_height="147dp"
-        android:src="@drawable/drama_cheese" />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView11"
+            android:layout_width="220dp"
+            android:layout_height="137dp"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/drama_cheese"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.092"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Cheese in The Trap"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageView11"
+            app:layout_constraintTop_toTopOf="@+id/imageView11" />
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="21dp"
+            android:layout_height="15dp"
+            android:layout_marginBottom="3dp"
+            android:src="@drawable/stars"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView11"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.875"
+            app:layout_constraintStart_toEndOf="@+id/imageView11" />
+
+        <ImageView
+            android:id="@+id/imageView16"
+            android:layout_width="21dp"
+            android:layout_height="15dp"
+            android:layout_marginBottom="3dp"
+            android:src="@drawable/stars"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView11"
+            app:layout_constraintEnd_toStartOf="@+id/imageView9"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/imageView11" />
+
+        <ImageView
+            android:id="@+id/imageView17"
+            android:layout_width="21dp"
+            android:layout_height="15dp"
+            android:layout_marginBottom="3dp"
+            android:src="@drawable/stars"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView11"
+            app:layout_constraintEnd_toStartOf="@+id/imageView9"
+            app:layout_constraintHorizontal_bias="0.812"
+            app:layout_constraintStart_toEndOf="@+id/imageView11" />
+
+        <ImageView
+            android:id="@+id/imageView18"
+            android:layout_width="21dp"
+            android:layout_height="15dp"
+            android:src="@drawable/stars"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView11"
+            app:layout_constraintEnd_toStartOf="@+id/imageView9"
+            app:layout_constraintHorizontal_bias="0.625"
+            app:layout_constraintStart_toEndOf="@+id/imageView11"
+            app:layout_constraintTop_toTopOf="@+id/imageView17"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="115dp"
+            android:layout_height="14dp"
+            android:layout_marginTop="10dp"
+            android:text="Drama, Korea, Romantis"
+            android:textSize="10sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.431"
+            app:layout_constraintStart_toEndOf="@+id/imageView11"
+            app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="129dp"
+            android:layout_height="12dp"
+            android:layout_marginTop="3dp"
+            android:text="Tayang : 4 jan - 1 mar 2016"
+            android:textSize="10sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.568"
+            app:layout_constraintStart_toEndOf="@+id/imageView11"
+            app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="85dp"
+            android:layout_height="13dp"
+            android:layout_marginTop="3dp"
+            android:text="Episode 1 - 16"
+            android:textSize="10sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.284"
+            app:layout_constraintStart_toEndOf="@+id/imageView11"
+            app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+        <ImageView
+            android:id="@+id/imageView19"
+            android:layout_width="220dp"
+            android:layout_height="137dp"
+            android:layout_marginTop="45dp"
+            android:src="@drawable/drama_alien"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.094"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView11" />
+
+        <TextView
+            android:id="@+id/textView19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="My Girlfriend is Alien"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.625"
+            app:layout_constraintStart_toEndOf="@+id/imageView19"
+            app:layout_constraintTop_toTopOf="@+id/imageView19" />
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="124dp"
+            android:layout_height="12dp"
+            android:layout_marginTop="10dp"
+            android:text="Drama, China, Fantasi"
+            android:textSize="10sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.489"
+            app:layout_constraintStart_toEndOf="@+id/imageView19"
+            app:layout_constraintTop_toBottomOf="@+id/textView19" />
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="147dp"
+            android:layout_height="13dp"
+            android:layout_marginTop="3dp"
+            android:text="Tayang : 19 Agust - 24 Sep 2019"
+            android:textSize="10sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.923"
+            app:layout_constraintStart_toEndOf="@+id/imageView11"
+            app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="129dp"
+            android:layout_height="12dp"
+            android:layout_marginTop="3dp"
+            android:text="Episode 1 - 28"
+            android:textSize="10sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.545"
+            app:layout_constraintStart_toEndOf="@+id/imageView11"
+            app:layout_constraintTop_toBottomOf="@+id/textView17" />
+
+        <ImageView
+            android:id="@+id/imageView23"
+            android:layout_width="21dp"
+            android:layout_height="15dp"
+            android:layout_marginBottom="5dp"
+            android:src="@drawable/stars"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView19"
+            app:layout_constraintEnd_toStartOf="@+id/imageView24"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/imageView19" />
+
+        <ImageView
+            android:id="@+id/imageView24"
+            android:layout_width="21dp"
+            android:layout_height="15dp"
+            android:layout_marginBottom="5dp"
+            android:src="@drawable/stars"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView19"
+            app:layout_constraintEnd_toStartOf="@+id/imageView20" />
+
+        <ImageView
+            android:id="@+id/imageView20"
+            android:layout_width="21dp"
+            android:layout_height="15dp"
+            android:layout_marginBottom="5dp"
+            android:src="@drawable/stars"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView19"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.598"
+            app:layout_constraintStart_toEndOf="@+id/imageView19" />
+
+        <ImageView
+            android:id="@+id/imageView21"
+            android:layout_width="21dp"
+            android:layout_height="15dp"
+            android:layout_marginBottom="5dp"
+            android:src="@drawable/stars"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView19"
+            app:layout_constraintStart_toEndOf="@+id/imageView20" />
+
+        <ImageView
+            android:id="@+id/imageView22"
+            android:layout_width="21dp"
+            android:layout_height="15dp"
+            android:layout_marginBottom="5dp"
+            android:src="@drawable/stars"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView19"
+            app:layout_constraintStart_toEndOf="@+id/imageView21" />
+
+        <ImageView
+            android:id="@+id/imageView25"
+            android:layout_width="220dp"
+            android:layout_height="137dp"
+            android:layout_marginTop="45dp"
+            android:src="@drawable/fab_city"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.094"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView19" />
+
+        <TextView
+            android:id="@+id/textView25"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fabricated City"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.324"
+            app:layout_constraintStart_toEndOf="@+id/imageView25"
+            app:layout_constraintTop_toTopOf="@+id/imageView25" />
+
+        <TextView
+            android:id="@+id/textView26"
+            android:layout_width="124dp"
+            android:layout_height="12dp"
+            android:layout_marginTop="10dp"
+            android:text="Drama, Korea, Petualangan"
+            android:textSize="10sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.489"
+            app:layout_constraintStart_toEndOf="@+id/imageView25"
+            app:layout_constraintTop_toBottomOf="@+id/textView25" />
+
+        <TextView
+            android:id="@+id/textView27"
+            android:layout_width="147dp"
+            android:layout_height="13dp"
+            android:layout_marginTop="3dp"
+            android:text="Rilis : 1 Maret 2017"
+            android:textSize="10sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.923"
+            app:layout_constraintStart_toEndOf="@+id/imageView25"
+            app:layout_constraintTop_toBottomOf="@+id/textView26" />
+
+        <TextView
+            android:id="@+id/textView28"
+            android:layout_width="129dp"
+            android:layout_height="12dp"
+            android:layout_marginTop="3dp"
+            android:text="Durasi : 2jam 16menit"
+            android:textSize="10sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.545"
+            app:layout_constraintStart_toEndOf="@+id/imageView25"
+            app:layout_constraintTop_toBottomOf="@+id/textView27" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </FrameLayout>
